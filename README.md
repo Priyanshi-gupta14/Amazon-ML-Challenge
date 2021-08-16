@@ -10,12 +10,11 @@ This repository contains the code and submission file which we submitted in Amaz
 ## Functions
   We used three custom functions in our notebook:
   1. create_product(DataFrame):
-    After analyzing the data, we concluded that details in Title, Description and Bullet Points are clashing so, we came to a conclusion of merging the Title, Description, and Bullet points into one single article which can be tokenized and used for training, so this function creates a new column “Products” using the existing 3 columns
-    Also, we replaced the Null values in Title, Description, and Bullet Points with the empty string(“”)
+      After analyzing the data, we concluded that details in Title, Description and Bullet Points are clashing so, we came to a conclusion of merging the Title, Description, and Bullet points into one single article which can be tokenized and used for training, so this function creates a new column “Products” using the existing 3 columns. Also, we replaced the Null values in Title, Description, and Bullet Points with the empty string(“”)
   2. clean_data(data):
-    This is the most important helper function in the notebook, it is used for cleaning the text data as it is important to send uniform data to our model for better training. This function lowercase all the text removes unnecessary punctuations and white_spaces, stems the words to their basic form, and removes stopwords.
+      This is the most important helper function in the notebook, it is used for cleaning the text data as it is important to send uniform data to our model for better training. This function lowercase all the text removes unnecessary punctuations and white_spaces, stems the words to their basic form, and removes stopwords.
   3. create(index,model):
-    This is a testing function that takes an index as an input. It runs the model over the test data and predict browse_node_ids and creates a CSV file of labels and predictions
+      This is a testing function that takes an index as an input. It runs the model over the test data and predict browse_node_ids and creates a CSV file of labels and predictions
 
 ## Stratified Data sampling
   We had a HUGE!! Dataset (~ 3M rows). So, instead of training the whole Dataset, we used Stratified sampling of the given Data. It gave us a sample Dataset that best represents the entire Dataset under study. For this, we used Scikit-Learn’s StratifiedShuffleSplit class. 
