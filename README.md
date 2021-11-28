@@ -53,7 +53,6 @@
     
 # Resources:
 ## How did you deal with the Imbalanced dataset?
-We used an undersampling method called stratified sampling.
  
 ## How did you clean the text data?
 [Text Cleaning](https://monkeylearn.com/blog/text-cleaning/)
@@ -99,7 +98,7 @@ We used an undersampling method called stratified sampling.
     It is also called proportional random sampling.
     It allows researchers to obtain a sample population that best represents the entire population being studied.
     It involves dividing the entire population into homogeneous groups called strata.
-    It differs from simple random sampling, which involves the random selection of data from an entire population, so each possible sample is equally likely to occur.
+    It differs from simple random sampling, which involves the random selection of data from an entire population, so each possible sample is equally likely to occur. Stratified sampling is used to select a sample that is representative of different groups. If the group is of different sizes, the number of items selected from each group will be proportional to the number of items in that group.
 
 
 # What are CountVectorizer and Tfidf doing? Why not any other transformation?
